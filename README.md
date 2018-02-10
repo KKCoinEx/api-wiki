@@ -1,4 +1,4 @@
-# KKCOIN.COM api-wiki
+# KKCoin.COM api-wiki
 
 KKCOIN.COM 以 RESTful 和 WebSocket 两种方式为专业用户提供自动化的数据及交易服务
 
