@@ -10,7 +10,7 @@ KKCOIN.COM 以 RESTful 和 WebSocket 两种方式为专业用户提供自动化�
 
 KKCOIN.com provides automated data and trade services for professional users by RESTful and WebSocket
 
-- RESTful Public API。[详情点击](https://github.com/KKCoinEx/api-wiki/wiki/RESTful-Public-API)
+- RESTful Public API。[Details](https://github.com/KKCoinEx/api-wiki/wiki/RESTful-Public-API)
 
 - RESTful Authenticated API provides private data access and operation interface, Submit message signature on each visit for verification authorization.  [Details](https://github.com/KKCoinEx/api-wiki/wiki/RESTful--API-EN)
 
