@@ -28,9 +28,18 @@ KKCoin.COM 以 RESTful 和 WebSocket 两种方式为专业用户提供自动化�
 <!-- /TOC -->
 
 #  介绍
+欢迎使用KKCoin.COM开发者文档。
+
+本文档提供了币币业务的账户管理、行情查询、交易功能等相关API的使用方法介绍。 行情API提供市场的公开的行情数据接口，账户和交易API需要身份验证，提供下单、撤单，查询订单和帐户信息等功能。
 
 # 开始使用
+REST，即Representational State Transfer的缩写，是一种流行的互联网传输架构。它具有结构清晰、符合标准、易于理解、扩展方便的，正得到越来越多网站的采用。其优点如下：
 
+- 在RESTful架构中，每一个URL代表一种资源
+- 客户端和服务器之间，传递这种资源的某种表现层
+- 客户端通过四个HTTP指令，对服务器端资源进行操作，实现“表现层状态转化”
+
+建议开发者使用REST API进行币币交易等操作。
 # API接口加密验证
 ![客户端密钥生成及签名流程](https://github.com/KKCoinEx/api-wiki/blob/master/chart/rest_auth_client.png)
 ## 生成秘钥
