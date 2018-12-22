@@ -159,6 +159,25 @@ Cache-Control: no-cache
 
 完成后，就可以通过 curl 或者其他类似的库完成 API 访问了
 
+**成功**
+HTTP状态码200表示成功响应，并可能包含内容。如果响应含有内容，则将显示在相应的返回内容里面。
+**常见错误码**
+| status_code | message                                  | reason                                   |
+| ----------- | ---------------------------------------- | ---------------------------------------- |
+| 用户端         |                                          |                                          |
+| 400         | General client mistake.                  | 通常是传入的参数错误导致的 |
+| 481         | HTTP HEADER lacks the necessary keys.    | 缺少必须的HTTP HEADER|
+| 482         | Timestamp verification failed.           | HTTP HEADER 中携带了无效的时间戳|
+| 483         | Signature duplicates are not allowed.    | HTTP HEADER 中携带的签名已经使用过了|
+| 484         | Access authorization verification failed. | 当前使用的 API KEY 没有获得用户的功能授权，常见的情况是一个只读权限的API KEY 访问了交易路由 |
+| 485         | IP rejected.                             | 当前 IP 违反了用户设定的 IP LIMIT 策略               |
+| 486         | message' => 'Invalid API-KEY.            | 错误的 API KEY 或已被删除                        |
+| 487         | Signature verification failed.           | 签名验证失败的原因较复杂，可能因为报文打包格式错误、错误的密钥对、报文时间戳和HEADER时间戳不一致等原因导致 |
+| 服务端         |                                          |                                          |
+| 500         | General server failure.                  | 服务端不可描述的错误，请联系 KKCOIN.COM                |
+| 581         | OpenSSL report an error occurred.        | 服务端签名验证错误，请联系 KKCOIN.COM                 |
+| 582         | Database report an error occurred.       | 服务端数据库错误，请联系 KKCOIN.COM                  |
+
 # 币币业务API参考
 ## 币币行情API
 ### 1-获取交易对Ticker
@@ -261,6 +280,7 @@ Get recent kline (up to last 200).
 ## 币币账户API
 ### 1-查询账户信息
 访问方式 GET
+**GET:** https://api.kkcoin.com/rest/balance
 
 | 参数   | 说明   |
 | ---- | ---- |
@@ -277,6 +297,7 @@ Get recent kline (up to last 200).
 
 ### 2-查询订单状态
 访问方式 GET
+**GET:** https://api.kkcoin.com/rest/order
 
 | 参数   | 说明    |
 | ---- | ----- |
@@ -299,6 +320,7 @@ Get recent kline (up to last 200).
 
 ### 3-查询有效委托
 访问方式 GET
+**GET:** https://api.kkcoin.com/rest/openorders
 
 | 参数     | 说明              |
 | ------ | --------------- |
@@ -322,7 +344,7 @@ Get recent kline (up to last 200).
 
 ### 4-委托下单
 访问方式 POST
-
+**POST:** https://api.kkcoin.com/rest/trade
 **参数**
 
 | 字段        | 说明               |
@@ -344,6 +366,7 @@ Get recent kline (up to last 200).
 得到返回订单号不代表下单成功，需要通过 order 路由查询订单状态确认执行的结果
 ### 5-取消委托
 访问方式 POST
+**POST:** https://api.kkcoin.com/rest/cancel
 
 | 参数   | 说明   |
 | ---- | ---- |
