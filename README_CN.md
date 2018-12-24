@@ -384,4 +384,4 @@ Get recent kline (up to last 200).
 
 ## WebSocketAPI
 
-[https://github.com/KKCoinEx/api-wiki/wiki/WebSocket-API](https://github.com/KKCoinEx/api-wiki/wiki/WebSocket-API)
+[WebSocketAPI](https://github.com/KKCoinEx/api-wiki/wiki/WebSocket-API)
