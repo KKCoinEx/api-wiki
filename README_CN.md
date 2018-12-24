@@ -24,7 +24,7 @@ KKCoin.COM 以 RESTful 和 WebSocket 两种方式为专业用户提供自动化�
     - [3. 查询有效委托](#3-查询有效委托)
     - [4. 委托下单](#4-委托下单)
     - [5. 取消委托](#5-取消委托)
-  - [WebSocket API](#WebSocket API)
+  - [WebSocketAPI](#WebSocketAPI)
 
 <!-- /TOC -->
 
@@ -382,5 +382,6 @@ Get recent kline (up to last 200).
 **注意:**
 得到返回订单号不代表取消成功，需要通过 order 路由查询订单状态确认执行的结果
 
-## WebSocket API
+## WebSocketAPI
+
 [https://github.com/KKCoinEx/api-wiki/wiki/WebSocket-API](https://github.com/KKCoinEx/api-wiki/wiki/WebSocket-API)
