@@ -1,4 +1,4 @@
-# KKCoin交易所官方API文档
+# KKCoin-official-api-docs
 
 KKCoin.COM provides automated data and transation services to profesisonal users in both RESTful and WebSocket formats.
 

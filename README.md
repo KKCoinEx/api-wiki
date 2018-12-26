@@ -1,5 +1,5 @@
 # KKCoin.com api-wiki
 
-[ENGLISH](https://github.com/KKCoinEx/api-wiki/blob/master/README_EN.md)
+[English Docs](https://github.com/KKCoinEx/api-wiki/blob/master/README_EN.md)
 
-[中文](https://github.com/KKCoinEx/api-wiki/blob/master/README_CN.md)
+[简体中文版文档](https://github.com/KKCoinEx/api-wiki/blob/master/README_CN.md)
