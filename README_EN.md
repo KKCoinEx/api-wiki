@@ -5,7 +5,7 @@ KKCoin.COM provides automated data and transation services to profesisonal users
 <!-- TOC -->
 
 - [Introduction](#Introduction)
-- [Getting Started](#Getting started)
+- [Getting Started](#Getting)
 - [Encrypted Verification of API](#Encrypted Verification of API)
   - [Generate Key](#Generate Key)
     - [Upload public key](#Upload public key)
