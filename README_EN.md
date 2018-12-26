@@ -45,7 +45,7 @@ REST, a.k.a. Representational State Trasnfer, is an architectural style that def
 Developers are recommended to use REST API to proceed spot trading and withdrawals. 
 
 # Encrypted Verification of API
-![Client key generation and signature process](https://github.com/KKCoinEx/api-wiki/blob/master/chart/rest_auth_client.png)
+![Client key generation and signature process](https://github.com/KKCoinEx/api-wiki/blob/master/chart/rest_auth_client_en.png)
 
 ## Generate key
 
@@ -73,11 +73,11 @@ While file type is .pem in this example, it is not madatory
 
 Open KKCOIN.COM  **Account** then **API**, then **Settings**
 
-![API](https://github.com/KKCoinEx/api-wiki/blob/master/chart/apientrance.png)
+![API](https://github.com/KKCoinEx/api-wiki/blob/master/chart/apientrance-EN.png)
 
 In the API Settings page
 
-![api Setting](https://github.com/KKCoinEx/api-wiki/blob/master/chart/apikey.png)
+![api Setting](https://github.com/KKCoinEx/api-wiki/blob/master/chart/apikey-EN.png)
 
 Enter a reference name in the small box on the right. Generate the lublic key from the previous step, copy its contents and paste it into the input box and click on **Create New KEY** to get an API KEY per below example
 
